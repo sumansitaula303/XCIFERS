@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F7F7F7"> <!-- Lighter background color -->
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/ic_launcher"
+        app:civ_border_color="#000000"
+        app:civ_border_width="3dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Vase"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#333333" /> <!-- Darker text color -->
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:text="Description"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#666666" /> <!-- Slightly darker text color -->
+
+    <TextView
+        android:id="@+id/owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:text="Owner: John Doe"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#666666" /> <!-- Slightly darker text color -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/hbidder"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="10dp"
+        android:text="Highest Bid:"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#666666" /> <!-- Slightly darker text color -->
+
+    <TextView
+        android:id="@+id/highestBidder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner"
+        android:layout_toRightOf="@+id/hbidder"
+        android:layout_marginTop="24dp"
+        android:text="200"
+        android:layout_marginLeft="8dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333333" /> <!-- Darker text color -->
+
+    <TextView
+        android:id="@+id/highestBidLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_toRightOf="@+id/highestBidder"
+        android:text="USD"
+        android:textColor="#666666"
+        android:textSize="22sp"
+        android:textStyle="bold" /> <!-- Slightly darker text color -->
+
+</RelativeLayout>

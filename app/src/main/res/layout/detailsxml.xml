@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Vase"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:text="Description: "
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/owner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="owner:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/owner"
+        android:layout_marginTop="21dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="55dp"
+        android:layout_toLeftOf="@+id/highestBidder"
+        android:text="HighestBId:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/highestBidder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/owner"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="200"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userBidLabel"
+        android:text="Your bid"
+        android:textSize="24sp"
+        android:layout_marginStart="10dp"
+        android:layout_toLeftOf="@+id/userBid"
+        android:layout_below="@+id/highestBidder"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="173dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/highestBidder"
+        android:id="@+id/userBid"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="000000"
+        android:textAlignment="center"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnBid"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userBid"
+        android:backgroundTint="@color/mybtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Bid" />
+
+</RelativeLayout>

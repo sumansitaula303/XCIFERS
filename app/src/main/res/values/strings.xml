@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">XCIFERS</string>
+    <string name="myproducts">Myproducts</string>
+    <string name="mybids">MyBids</string>
+    <string name="addproduct">AddProduct</string>
+    <string name="logout">LogOut</string>
+</resources>
